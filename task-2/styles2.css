@@ -1,0 +1,131 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: stretch;
+  width: 400px;
+  height: 448px;
+  padding: 18px;
+  background: #9c9c9c;
+  border: 2px solid #626262;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+/*Forms*/
+
+.form-registration {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+.form-divider {
+  height: 1px;
+  background-color: #c4c4c4;
+  width: 396px;
+  position: relative;
+  left: -18px;
+}
+.form-email {
+  padding: 20px 0 0 0;
+  width: 100%;
+}
+.form-password {
+  padding: 20px 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-name {
+  padding: 20px 0 0 0;
+  width: 100%;
+}
+.form-age {
+  padding: 20px 0;
+  width: 100%;
+}
+.form-controls {
+  padding: 20px 0 0;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/*Elements*/
+
+.input-and-label {
+  height: 49px;
+  display: flex;
+  align-content: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+input {
+  height: 28px;
+  box-sizing: border-box;
+  border: 1px solid #9c9c9c;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+::placeholder {
+  height: 14px;
+  color: #cccccc;
+}
+
+.form-age .input-and-label {
+  width: 175px;
+}
+.form-password .input-and-label {
+  width: 175px;
+}
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.submit {
+  padding: 6.5px 10px;
+  background: #616161;
+  border: 1px solid #616161;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #cccccc;
+}
+.reset {
+  padding: 6.5px 10px;
+  background: #cccccc;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Roboto;
+  font-size: 14px;
+  text-align: center;
+  color: #616161;
+}
+input:invalid:not(:placeholder-shown) {
+  border-color: red;
+}
+input:valid:not(:placeholder-shown) {
+  border-color: green;
+}

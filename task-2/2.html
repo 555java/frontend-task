@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <title>Task 2</title>
+</head>
+<body>
+    <form action="#" class="form" name="form">
+        <div class="form-registration">Регистрация</div>
+        
+        <div class="form-divider"></div>
+        
+        <div class="form-email">
+            <div class="input-and-label">
+                <label for="email" class="label">E-mail</label>
+                <input id="email"  type="email" name="email" placeholder="example@site.domain" required>
+            </div>
+        </div>
+        
+        <div class="form-password">
+            <div class="input-and-label">
+                <label for="password" class="label">Пароль</label>
+                <input id="password" type="password" name="password" placeholder="password" required>
+            </div>
+            <div class="input-and-label">
+                <label for="label-repeat" class="label">Повторите пароль</label>
+                <input id="label-repeat" type="password" name="password-repeat" placeholder="password" required>
+            </div>
+        </div>
+        
+        <div class="form-name">
+            <div class="input-and-label">
+                <label for="name" class="label">ФИО</label>
+                <input id="name"  type="text" name="name" placeholder="Игорев Игорь Игоревич" required>
+            </div>
+        </div>
+        
+        <div class="form-age">
+            <div class="input-and-label">
+                <label for="age" class="label">Возраст</label>
+                <input id="age"  type="number" name="age" min="1" max="100"  placeholder="18" required>
+            </div>
+        </div>
+
+        <div class="form-divider"></div>
+
+        <div class="form-controls">
+            <button class="submit" type="submit">Отправить</button>
+            <button class="reset" type="reset">Отмена</button>
+        </div>
+    </form>
+</body>
+</html>
